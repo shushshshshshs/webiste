@@ -1,0 +1,74 @@
+body {
+    font-family: 'Merriweather', serif;
+    background: #FFEAEA;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 28px;
+    color: #6B3E3E;
+}
+.logo span {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+}
+nav a {
+    text-decoration: none;
+    color: #B35E5E;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 18px;
+}
+nav a.active {
+    text-decoration: underline;
+}
+.hero {
+    padding: 100px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+.hero h1 {
+    font-size: 36px;
+}
+.hero p {
+    font-size: 18px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #D47777;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.feature img {
+    width: 100px;
+}
+.feature h3 {
+    color: #6B3E3E;
+}
