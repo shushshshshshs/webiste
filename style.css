@@ -1,74 +1,49 @@
 body {
-    font-family: 'Merriweather', serif;
-    background: #FFEAEA;
+    font-family: Arial, sans-serif;
+    background-color: #FAE3E3;
+    color: #5A4033;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 20px 50px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    background: #F8D8D8;
 }
-.logo {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 28px;
-    color: #6B3E3E;
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-.logo span {
-    display: block;
-    font-size: 14px;
-    font-style: italic;
-}
-nav a {
-    text-decoration: none;
-    color: #B35E5E;
-    font-weight: bold;
+
+nav ul li {
+    display: inline;
     margin: 0 15px;
-    font-size: 18px;
 }
-nav a.active {
-    text-decoration: underline;
-}
-.hero {
-    padding: 100px 20px;
-    background: url('background.jpg') no-repeat center center/cover;
-    color: white;
-}
-.hero h1 {
-    font-size: 36px;
-}
-.hero p {
-    font-size: 18px;
-}
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #D47777;
-    color: white;
+
+nav ul li a {
     text-decoration: none;
+    color: #5A4033;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
     border-radius: 8px;
-    font-size: 18px;
+}
+
+h1, h2 {
+    color: #B05D5D;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #F8D8D8;
     margin-top: 20px;
 }
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-}
-.feature {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.feature img {
-    width: 100px;
-}
-.feature h3 {
-    color: #6B3E3E;
-}
+
