@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f3e0dc;
+    background: url('background.png') no-repeat center center/cover;
     color: #5a3d3d;
     text-align: center;
 }
@@ -22,22 +22,13 @@ header {
     left: 0;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #5a3d3d;
-}
-
-.logo span {
-    font-size: 16px;
-    font-weight: normal;
-    display: block;
+.logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
 }
 
@@ -51,91 +42,64 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    color: #e07a7a;
-    border-bottom: 2px solid #e07a7a;
+nav ul li a.active {
+    color: #d67a83;
+    text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    background: url('background.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding: 150px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 80px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 2.5em;
     color: #5a3d3d;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #7a4c4c;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #e07a7a;
+.quiz-button {
+    background: #d67a83;
     color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    border-radius: 8px;
-}
-
-.btn:hover {
-    background: #c76969;
 }
 
 /* Features Section */
 .features {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     padding: 50px;
-    background: #f8dcd6;
 }
 
 .feature {
-    text-align: center;
-    background: #f9e0dc;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 40%;
 }
 
 .feature img {
     width: 100px;
     height: auto;
-    margin-bottom: 10px;
 }
 
-.feature h3 {
-    font-size: 20px;
+.feature h2 {
     color: #5a3d3d;
 }
 
-/* Personality Groups */
-.personality-groups {
-    padding: 50px;
-    background: #f3e0dc;
-    text-align: center;
-}
-
-.personality-groups h2 {
-    font-size: 28px;
-    color: #5a3d3d;
-    margin-bottom: 20px;
-}
-
-.personality-groups img {
-    width: 60%;
-    max-width: 800px;
+/* Footer */
+footer {
+    background: #fff;
+    padding: 20px;
+    margin-top: 50px;
 }
