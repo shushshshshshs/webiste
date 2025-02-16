@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: #f3e0dc;
@@ -12,72 +12,122 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    align-items: center;
+    padding: 20px 50px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
-    color: #ff99a0;
+    color: #d1919b;
 }
 
 .logo span {
-    font-size: 14px;
-    color: #7a6c6c;
+    font-size: 16px;
+    font-style: italic;
+    color: #5a3d3d;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #7a6c6c;
-    font-weight: bold;
+    color: #5a3d3d;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    color: #ff99a0;
-    border-bottom: 2px solid #ff99a0;
+    color: #d1919b;
+    border-bottom: 2px solid #d1919b;
 }
 
 /* Hero Section */
 .hero {
-    padding: 100px 20px;
-    background: url('background.jpg') no-repeat center center/cover;
-    color: white;
+    background: url('background-texture.jpg') no-repeat center center/cover;
+    padding: 150px 20px;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #5a3d3d;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #d1919b;
 }
 
-.btn {
-    padding: 10px 20px;
-    background: #ff99a0;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background: #fad9cd;
 }
 
-.btn:hover {
-    background: #e57373;
+.feature {
+    text-align: center;
+    max-width: 300px;
 }
-<link rel="stylesheet" type="text/css" href="style.css">
 
+.feature img {
+    width: 150px;
+    height: auto;
+}
+
+.feature h3 {
+    font-size: 22px;
+    color: #b35a66;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #5a3d3d;
+}
+
+/* Insights Section */
+.insights {
+    background: #e8c9c0;
+    padding: 50px;
+}
+
+.insights h2 {
+    font-size: 28px;
+    color: #5a3d3d;
+}
+
+.insights img {
+    width: 70%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: white;
+    padding: 20px;
+    color: #5a3d3d;
+    font-size: 16px;
+}
