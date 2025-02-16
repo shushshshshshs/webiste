@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -19,114 +20,86 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
-    color: #d1919b;
-}
-
-.logo span {
-    font-size: 16px;
-    font-style: italic;
-    color: #5a3d3d;
+    color: #b87d7d;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-}
-
-nav ul li {
-    margin: 0 20px;
+    gap: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #5a3d3d;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    color: #d1919b;
-    border-bottom: 2px solid #d1919b;
+nav ul li a.active {
+    color: #d98282;
+    border-bottom: 2px solid #d98282;
 }
 
 /* Hero Section */
 .hero {
-    background: url('background-texture.jpg') no-repeat center center/cover;
-    padding: 150px 20px;
-    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    background: url('background.png') no-repeat center center/cover;
 }
 
 .hero h1 {
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 36px;
     color: #5a3d3d;
 }
 
 .hero p {
     font-size: 18px;
-    margin-top: 10px;
-    color: #d1919b;
+    color: #8a6d6d;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #d98282;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Features Section */
 .features {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
     padding: 50px;
-    background: #fad9cd;
 }
 
 .feature {
+    background: #fde7e3;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    max-width: 300px;
 }
 
 .feature img {
-    width: 150px;
-    height: auto;
+    max-width: 100px;
 }
 
-.feature h3 {
-    font-size: 22px;
-    color: #b35a66;
-}
-
-.feature p {
-    font-size: 16px;
+.feature h2 {
+    font-size: 20px;
     color: #5a3d3d;
-}
-
-/* Insights Section */
-.insights {
-    background: #e8c9c0;
-    padding: 50px;
-}
-
-.insights h2 {
-    font-size: 28px;
-    color: #5a3d3d;
-}
-
-.insights img {
-    width: 70%;
-    max-width: 800px;
-    margin-top: 20px;
 }
 
 /* Footer */
 footer {
-    background: white;
     padding: 20px;
+    background: #fff;
     color: #5a3d3d;
-    font-size: 16px;
+    font-weight: bold;
 }
